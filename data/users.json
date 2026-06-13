@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1781369513257",
+    "email": "test-user@example.com",
+    "name": "Test User",
+    "password": "$2b$10$O8YCFPiNfWUReBR598kQ.embxhnIi8e83oVPU8dwy3Gul0bBQroWy",
+    "emailVerified": "2026-06-13T16:51:53.257Z",
+    "image": null,
+    "createdAt": "2026-06-13T16:51:53.257Z",
+    "updatedAt": "2026-06-13T16:51:53.257Z"
+  },
+  {
+    "id": "1781370015556",
+    "email": "cristianrufinoccencho@gmail.com",
+    "name": "Cristian Rufino",
+    "password": "$2b$10$X9GYjk4axOEbh6qzl2R2a.GZcHXutLEH5re/KZAk6gp/lwJAdUxny",
+    "emailVerified": "2026-06-13T17:00:15.556Z",
+    "image": null,
+    "createdAt": "2026-06-13T17:00:15.556Z",
+    "updatedAt": "2026-06-13T17:00:15.556Z"
+  }
+]
