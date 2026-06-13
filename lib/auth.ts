@@ -26,14 +26,16 @@ interface LockStatus {
   remainingTime?: number;
 }
 
-const USERS_FILE = path.join(process.cwd(), 'data', 'users.json');
-const ATTEMPTS_FILE = path.join(process.cwd(), 'data', 'login-attempts.json');
+const isVercel = process.env.VERCEL === "1";
+const DATA_DIR = isVercel ? "/tmp" : path.join(process.cwd(), "data");
+
+const USERS_FILE = path.join(DATA_DIR, "users.json");
+const ATTEMPTS_FILE = path.join(DATA_DIR, "login-attempts.json");
 
 // Asegurar que el directorio exista
 const ensureDataDir = () => {
-  const dir = path.join(process.cwd(), 'data');
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
   }
 };
 
